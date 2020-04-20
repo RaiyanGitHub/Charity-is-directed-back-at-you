@@ -24,9 +24,12 @@ public class NaynaReey {
         Teacher Ara = new Teacher("Tasnim Ara Mim","Khalishpur, Khulna");
         Student Afridi = new Student("Shahid Afridi","Karachi, Pakistan");
         
-        System.out.println("\nperson's getname() does this:--\t"+raiyan.getName()+"\nPerson's getAddress() does this:--\t "+raiyan.getAddress());
-        System.out.println("\nperson's getname() does this:--\t"+rana.getName()+"\nPerson's getAddress() does this:--\t "+rana.getAddress());
-        System.out.println("\nperson's toString() does this:--\t"+rana.toString()+"\nPerson's toString() does this:--\t "+raiyan.toString());
+        System.out.println("\nperson's getname() does this:--\t"+raiyan.getName()
+                +"\nPerson's getAddress() does this:--\t "+raiyan.getAddress());
+        System.out.println("\nperson's getname() does this:--\t"+rana.getName()
+                +"\nPerson's getAddress() does this:--\t "+rana.getAddress());
+        System.out.println("\nperson's toString() does this:--\t"+rana.toString()
+                +"\nPerson's toString() does this:--\t "+raiyan.toString());
         
         System.out.println("Teacher's getName() does this:--\t"+Ara.getName()
                           +"\nTeacher's getAddress() does this:--\t"+Ara.getAddress()
@@ -49,7 +52,29 @@ public class NaynaReey {
                           +"\nTeacher's getNumCourses() does this:--\t"+Ara.getNumCourses()
                           +"\nTeacher's getCourses() does this:--\t"+Ara.getCourses());
         
-        System.out.println("");
+        //Now Testing the Student:
+        System.out.println("Student's getName() does this:--\t"+Afridi.getName()
+                          +"\nStudent's getAddress() does this:--\t"+Afridi.getAddress()
+                          +"\nStudent's toString() does this:--\t"+Afridi.toString()
+                          +"\nStudent's getNumCourses() does this:--\t"+Afridi.getNumCourses()
+                          +"\nStudent's getCourses() does this:--\t"+Afridi.getCourses());
+        
+        //good. Now let's initialize some data  into students
+        Afridi.addCourseGrade("OOP", 3.5);
+        Afridi.addCourseGrade("PPS", 3.43);
+        Afridi.addCourseGrade("DM", 3.95);
+        Afridi.addCourseGrade("EM", 3.98);
+        Afridi.addCourseGrade("ACT", 4.00);
+        
+        //Now test it again
+        System.out.println("Student's getName() does this:--\t"+Afridi.getName()
+                          +"\nStudent's getAddress() does this:--\t"+Afridi.getAddress()
+                          +"\nStudent's toString() does this:--\t"+Afridi.toString()
+                          +"\nStudent's getNumCourses() does this:--\t"+Afridi.getNumCourses()
+                          +"\nStudent's getCourses() does this:--\t"+Afridi.getCourses()
+                          +"\nStudent's getGrades() does this:--\t"+Afridi.getGrades()
+                          +"\n Student's getAverageGrades() does this:--\t"+Afridi.getAverageGrades());
+        Afridi.printGrades();
     }
 
 }
