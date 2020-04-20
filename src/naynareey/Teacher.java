@@ -50,6 +50,7 @@ public class Teacher extends Person {
         
         if(this.courses.indexOf(course) == -1){//this method returns -1 if the argument object does not exist in the collection
             this.courses.add(course);
+            this.numCourses++;
             return true;
         }
         
@@ -61,7 +62,4 @@ public class Teacher extends Person {
         
     }//remove course
     
-    
-    
-    
-}
+}// Teacher
