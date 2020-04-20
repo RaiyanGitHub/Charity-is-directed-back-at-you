@@ -69,10 +69,10 @@ public class Student extends Person {
         Iterator itrC = this.courses.iterator();
         Iterator itrG = this.grades.iterator();
         while(itrC.hasNext() && itrG.hasNext()){
-            itrC.next();
-            itrG.next();
+            //itrC.next();
+            //itrG.next();
             
-            System.out.println("Result for course "+itrC+" is: "+itrG+"\n");
+            System.out.println("Result for course "+itrC.next()+" is: "+itrG.next()+"\n");
         }
         
     }//printGrades
