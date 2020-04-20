@@ -18,6 +18,22 @@ public class Teacher extends Person {
     Teacher(String name, String address){
         super(name,address);
     }
+
+    public int getNumCourses() {
+        return numCourses;
+    }
+
+    public ArrayList<String> getCourses() {
+        return courses;
+    }
+
+    public void setNumCourses(int numCourses) {
+        this.numCourses = numCourses;
+    }
+
+    public void setCourses(ArrayList<String> courses) {
+        this.courses = courses;
+    }
     
     public String toString(){
         String cours = "";
